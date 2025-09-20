@@ -4,6 +4,16 @@ This is the personal portfolio website of Dipin Yadav, a Senior Software Develop
 
 ## Experience
 
+### Software Engineer
+**NetConnectGlobal (Deployed at Orange Business India)**  
+*March 2025 – Present*  
+*Gurgaon, Haryana*  
+- Working on the Acort project for Orange Business India as part of the client’s engineering team.
+- Developing and maintaining microservices using Python, Bash, and Perl, ensuring high performance and scalability.
+- Containerizing applications with Docker and orchestrating deployments on Kubernetes.
+- Leveraging Azure and AWS cloud services for scalable infrastructure and seamless CI/CD integration.
+- Collaborating with cross-functional teams to improve reliability, security, and performance of cloud-native applications.
+ - Migrated ftp/sftp/scp file sharing to a new, more secure internal tool called e-files across Acort services.
 ### Senior Software Developer
 **Meritto (Nopaperforms)**  
 *March 2024 – Feb 2025*  
@@ -23,16 +33,16 @@ This is the personal portfolio website of Dipin Yadav, a Senior Software Develop
 ## Technical Skills
 
 ### Languages
-- PHP, Python, SQL, JavaScript
+- PHP, Python, SQL, JavaScript, Perl, Bash
 
 ### Technologies/Frameworks
-- Linux, MySQL, PostgreSQL, CakePHP, Django, CS-cart, Phalcon, Flask, Django-rest-framework, MongoDB, Microservices
+- Linux, MySQL, PostgreSQL, CakePHP, Django, CS-cart, Phalcon, Flask, Django-rest-framework, MongoDB, Microservices, Docker, Kubernetes
 
 ### Developer Tools
 - VS Code, Git, Postman, Jira, Bitbucket, AWS
 
 ### Libraries
-- jQuery
+- jQuery, boto3(AWS SDK)
 
 ## Projects
 
