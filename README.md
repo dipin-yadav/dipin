@@ -46,6 +46,12 @@ This is the personal portfolio website of Dipin Yadav, a Senior Software Develop
 
 ## Projects
 
+### ACORT 
+*Python, Bash, Perl, Kubernetes, Gitlab CI/CD*
+*Apr 2025 - Present*
+- Developed e-files microservice to migrate file sharing from flowclient(Internal services)
+- Implemented Gitlab CI/CD pipeline for automated code review, build and deployment.
+
 ### Meritto Prospecta (Raw Data)
 *DRF, Microservices, PostgreSQL*  
 *Oct 2024 – Feb 2025*  
