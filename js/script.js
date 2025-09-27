@@ -29,8 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // --- SMOOTH SCROLLING ---
-    const scrollLinks = document.querySelectorAll('nav a[href^="#"]');
-    const header = document.querySelector('.sticky-header');
+    const scrollLinks = document.querySelectorAll('a[href^="#"]');
 
     scrollLinks.forEach(link => {
         link.addEventListener('click', function(e) {
@@ -40,12 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetElement = document.querySelector(targetId);
             
             if (targetElement) {
-                const headerOffset = header ? header.offsetHeight : 70; // Use header height or a fallback
-                const elementPosition = targetElement.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
                 window.scrollTo({
-                    top: offsetPosition,
+                    top: targetElement.offsetTop - 30, // Adjusted for some spacing
                     behavior: 'smooth'
                 });
             }
@@ -53,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // --- ANIMATIONS ON SCROLL ---
-    const animatedItems = document.querySelectorAll('.card, .skill-badge');
+    const animatedItems = document.querySelectorAll('.about-box, .skill-card, .experience-item, .project-card, .contact-box');
     
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -67,14 +62,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     animatedItems.forEach(item => {
+        // Add a class to hide them initially
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(20px)';
+        item.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
         observer.observe(item);
     });
+
+    // Add .is-visible class to animated items to trigger animation
+    const style = document.createElement('style');
+    style.innerHTML = `
+        .is-visible {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+    `;
+    document.head.appendChild(style);
 
     // --- FOOTER YEAR ---
     const currentYear = new Date().getFullYear();
     const footerYear = document.querySelector('footer p');
     if (footerYear) {
-        footerYear.innerHTML = `&copy; ${currentYear} Dipin Yadav. All rights reserved.`;
+        footerYear.innerHTML = `&copy; ${currentYear} Dipin Yadav. All Rights Reserved.`;
     }
 
 });
