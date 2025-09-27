@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -7,36 +7,57 @@
     <title>Dipin Yadav - Software Developer</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta name="description"
         content="Dipin Yadav - Senior Software Developer specializing in Django, PHP, Bash, Perl and Microservices, Docker, Kubernetes and Cloud">
 </head>
 
 <body>
-    <header>
+    <header class="sticky-header">
         <div class="container">
             <div class="header-content">
-                <img src="img/profile.jpeg" alt="Dipin Yadav" class="profile-image">
-                <h1>Dipin Yadav</h1>
-                <p class="tagline">Senior Software Developer</p>
-                <div class="contact-info">
-                    <p><i class="fas fa-map-marker-alt"></i> Gurgaon, Haryana</p>
-                    <p><i class="fas fa-phone"></i> +91-7015764714</p>
-                    <p><i class="fas fa-envelope"></i> <a
-                            href="mailto:dipin.yadav18@gmail.com">dipin.yadav18@gmail.com</a></p>
-                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/dipin-yadav/"
-                            target="_blank">LinkedIn</a></p>
-                    <p><i class="fab fa-github"></i> <a href="https://github.com/dipin-yadav" target="_blank">GitHub</a>
-                    </p>
+                <a href="#" class="logo">Dipin Yadav</a>
+                <nav>
+                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#education">Education</a>
+                </nav>
+                <div class="theme-switcher">
+                    <input type="checkbox" id="theme-toggle">
+                    <label for="theme-toggle" class="slider">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </label>
                 </div>
             </div>
         </div>
     </header>
 
+    <section id="hero">
+        <div class="container">
+            <img src="img/profile.jpeg" alt="Dipin Yadav" class="profile-image">
+            <h1>Dipin Yadav</h1>
+            <p class="tagline">Senior Software Developer</p>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Gurgaon, Haryana</p>
+                <p><i class="fas fa-phone"></i> +91-7015764714</p>
+                <p><i class="fas fa-envelope"></i> <a
+                        href="mailto:dipin.yadav18@gmail.com">dipin.yadav18@gmail.com</a></p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/dipin-yadav/"
+                        target="_blank">LinkedIn</a></p>
+                <p><i class="fab fa-github"></i> <a href="https://github.com/dipin-yadav" target="_blank">GitHub</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
     <main class="container">
         <section id="experience">
             <h2><i class="fas fa-briefcase"></i> Experience</h2>
-
-            <div class="experience-item">
+            <div class="card">
                 <div class="job-header">
                     <h3>Software Engineer</h3>
                     <p class="company">NetConnectGlobal (Deployed at Orange Business India)</p>
@@ -57,7 +78,7 @@
                         Acort services.</li>
                 </ul>
             </div>
-            <div class="experience-item">
+            <div class="card">
                 <div class="job-header">
                     <h3>Senior Software Developer</h3>
                     <p class="company">Meritto (Nopaperforms)</p>
@@ -73,7 +94,7 @@
                 </ul>
             </div>
 
-            <div class="experience-item">
+            <div class="card">
                 <div class="job-header">
                     <h3>Software Developer</h3>
                     <p class="company">Shipway</p>
@@ -96,28 +117,52 @@
             <div class="skills-container">
                 <div class="skill-category">
                     <h3>Languages</h3>
-                    <p>PHP, Python, SQL, JavaScript</p>
+                    <p>
+                        <span class="skill-badge">PHP</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">SQL</span>
+                        <span class="skill-badge">JavaScript</span>
+                    </p>
                 </div>
                 <div class="skill-category">
                     <h3>Technologies/Frameworks</h3>
-                    <p>Linux, MySQL, PostgreSQL, CakePHP, Django, CS-cart, Phalcon, Flask, Django-rest-framework,
-                        MongoDB, Microservices</p>
+                    <p>
+                        <span class="skill-badge">Linux</span>
+                        <span class="skill-badge">MySQL</span>
+                        <span class="skill-badge">PostgreSQL</span>
+                        <span class="skill-badge">CakePHP</span>
+                        <span class="skill-badge">Django</span>
+                        <span class="skill-badge">CS-cart</span>
+                        <span class="skill-badge">Phalcon</span>
+                        <span class="skill-badge">Flask</span>
+                        <span class="skill-badge">Django-rest-framework</span>
+                        <span class="skill-badge">MongoDB</span>
+                        <span class="skill-badge">Microservices</span>
+                    </p>
                 </div>
                 <div class="skill-category">
                     <h3>Developer Tools</h3>
-                    <p>VS Code, Git, Postman, Jira, Bitbucket, AWS</p>
+                    <p>
+                        <span class="skill-badge">VS Code</span>
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">Postman</span>
+                        <span class="skill-badge">Jira</span>
+                        <span class="skill-badge">Bitbucket</span>
+                        <span class="skill-badge">AWS</span>
+                    </p>
                 </div>
                 <div class="skill-category">
                     <h3>Libraries</h3>
-                    <p>jQuery</p>
+                    <p>
+                        <span class="skill-badge">jQuery</span>
+                    </p>
                 </div>
             </div>
         </section>
 
         <section id="projects">
             <h2><i class="fas fa-project-diagram"></i> Projects</h2>
-
-            <div class="project-item">
+            <div class="card">
                 <h3>Meritto Prospecta (Raw Data)</h3>
                 <p class="technologies">DRF, Microservices, PostgreSQL</p>
                 <p class="duration">Oct 2024 – Feb 2025</p>
@@ -128,8 +173,7 @@
                     <li>Created a new source of revenue for the company.</li>
                 </ul>
             </div>
-
-            <div class="project-item">
+            <div class="card">
                 <h3>Meritto Telephony Module</h3>
                 <p class="technologies">Django, Microservices, MySQL, CakePHP</p>
                 <p class="duration">Mar 2024 – Oct 2024</p>
@@ -139,8 +183,7 @@
                         features.</li>
                 </ul>
             </div>
-
-            <div class="project-item">
+            <div class="card">
                 <h3>Shipway Aggregation</h3>
                 <p class="technologies">PHP, MySQL, MongoDB</p>
                 <p class="duration">Nov 2021 - March 2024</p>
@@ -159,7 +202,7 @@
 
         <section id="education">
             <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-            <div class="education-item">
+            <div class="card">
                 <h3>Gurgaon Institute of Technology and Management</h3>
                 <p class="degree">B.Tech (Computer Science)</p>
                 <p class="duration">2014 - 2018</p>
