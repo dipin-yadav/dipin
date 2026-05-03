@@ -102,14 +102,38 @@ ul {
     -webkit-text-fill-color: transparent;
 }
 
-nav a {
-    margin-left: 2rem;
-    font-weight: 600;
-    color: var(--text-muted);
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
 }
 
-nav a:hover {
+nav a {
+    font-weight: 600;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    position: relative;
+    white-space: nowrap;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: 0.3s;
+}
+
+nav a:hover, nav a.active {
     color: var(--primary);
+}
+
+nav a:hover::after, nav a.active::after {
+    width: 100%;
 }
 
 /* --- THEME SWITCHER --- */
@@ -233,21 +257,30 @@ h1 {
 }
 
 .contact-info {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
 .contact-info p {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
-    margin-bottom: 0.5rem;
+    gap: 1rem;
     color: var(--text-muted);
+    font-size: 1rem;
+}
+
+.contact-info i {
+    width: 20px;
+    color: var(--primary);
+    text-align: center;
 }
 
 .social-links {
     display: flex;
-    gap: 1.5rem;
-    margin-top: 1rem;
+    gap: 1.2rem;
+    margin-top: 0.5rem;
 }
 
 .social-links a {
@@ -549,14 +582,39 @@ footer {
 
 /* --- RESPONSIVE --- */
 @media (max-width: 992px) {
+    .header-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0.75rem 0;
+    }
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        margin-top: 0.75rem;
+        gap: 1.2rem;
+        padding-top: 0.75rem;
+        border-top: 1px solid var(--border);
+    }
+    .theme-switcher {
+        margin-left: 0;
+        order: 2;
+    }
+    .logo {
+        order: 1;
+    }
+    #hero {
+        padding-top: 13rem; /* Increase top padding to clear the taller mobile header */
+    }
     .hero-content {
         flex-direction: column-reverse;
         text-align: center;
     }
     .hero-text h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
-    .contact-info p, .cta-buttons {
+    .contact-info p, .cta-buttons, .social-links {
         justify-content: center;
     }
     .summary {
