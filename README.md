@@ -3,6 +3,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Dipin_Yadav-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/dipin-yadav/)
 [![GitHub](https://img.shields.io/badge/GitHub-dipin--yadav-black?style=flat-square&logo=github)](https://github.com/dipin-yadav)
 [![Email](https://img.shields.io/badge/Email-dipin.yadav18@gmail.com-red?style=flat-square&logo=gmail)](mailto:dipin.yadav18@gmail.com)
+[![Phone](https://img.shields.io/badge/Phone-+91--7015764714-green?style=flat-square&logo=phone)](tel:+917015764714)
 
 Senior Python Backend Developer with over 4 years of experience building scalable backend systems, microservices, and cloud-native applications. AWS Certified Cloud Practitioner with a strong focus on Cloud Security, DevOps, and high-performance database management.
 
@@ -27,7 +28,7 @@ March 2024 – February 2025 | Gurgaon, Haryana
 
 ### **PHP Web Developer** | Shipway by Unicommerce
 
-August 2021 – March 2024 | Gurgaon, Haryana
+November 2021 – March 2024 | Gurgaon, Haryana
 
 - Developed the **Shipway Aggregation module**, the company's highest revenue-generating product.
 - Implemented core features including Weight MIS, COD Remittance, and Wallet systems.
